@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Média ponderada
@@ -8,11 +9,11 @@
     */
 
     //ENTRADA
-
-
+    const primeiraNota = Number(prompt(`Insira a nota que você obteve na primeira atividade avaliativa:`))
+    const segundaNota = Number(prompt(`Insira a nota que você obteve na segunda atividade avaliativa:`))
     //PROCESSAMENTO
-
+   const mediaFinal = ((primeiraNota *3/10)+(segundaNota*7/10))
 
     //SAÍDA
-
-</script>
+    alert(`Sua media final foi de ${mediaFinal}`)
+    </script>

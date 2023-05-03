@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: Consumo viagem
@@ -8,11 +9,14 @@
     */
 
     //ENTRADA
-
-
+    const distancia = Number(prompt(`Insira a distancia de sua viagem:`))
     //PROCESSAMENTO
-
+    const combustivel = (distancia/14)* 5.29
+    const pedagio = (distancia/50)*4.90
+    const final = combustivel+pedagio
 
     //SAÍDA
-
+    alert(`O valor que você ira gastar com combustivel é R$ ${combustivel. toFixed(2).replace(".",",")}`)
+    alert(`O valor que você ira gastar com pedagios é de R$ ${pedagio.toFixed(2).replace(".",",")}`)
+    alert(`O valor total que você ira gastar com essa viagem é de R$ ${final.toFixed(2).replace(".",",")}`)
 </script>
